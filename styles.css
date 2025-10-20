@@ -1,0 +1,155 @@
+/* General */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  color: #222;
+}
+
+/* Header y Navbar */
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+  gap: 2rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #0b74df;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #e63946;
+}
+
+/* Secciones */
+section {
+  padding: 6rem 2rem 2rem;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Productos */
+.products-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.product-card img {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Botones */
+button {
+  padding: 0.7rem;
+  background: #0b74df;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #e63946;
+}
+
+/* Carrito */
+#cart {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+#cart-items li {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.3s;
+}
+
+#cart-items li.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Mensaje flotante */
+.floating-msg {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #0b74df;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  opacity: 0;
+  z-index: 1000;
+  transition: opacity 0.5s, transform 0.3s;
+}
+
+.floating-msg.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Footer */
+footer {
+  padding: 2rem;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .navbar ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .product-card img {
+    width: 150px;
+  }
+}
