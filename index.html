@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Tienda de ropa moderna, cómoda y con estilo. Moda de calidad al mejor precio.">
+<meta name="keywords" content="ropa, moda, tienda online, estilo, outfits, tendencia, camisetas, chaquetas, pantalones">
+<meta name="author" content="Ritmo y Huella">
+<title>Tienda de Ropa | Moda Moderna y de Calidad</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <ul>
+      <li><a href="#hero">Inicio</a></li>
+      <li><a href="#store">Tienda</a></li>
+      <li><a href="#about">Sobre nosotros</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="hero">
+  <h1>Bienvenido a nuestra Tienda de Ropa</h1>
+  <p>Moda moderna y de calidad para todos</p>
+</section>
+
+<!-- 🛍️ TIENDA -->
+<section id="store">
+  <h2>Tienda</h2>
+  <div class="store-grid">
+    
+    <!-- Producto 1 -->
+    <div class="store-item">
+      <img src="assets/product1.jpg" alt="Camiseta Moderna">
+      <h3>Camiseta Moderna</h3>
+      <p class="price">€25</p>
+      <p class="description">Camiseta cómoda y elegante para cualquier ocasión.</p>
+      <select class="size-select">
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+      </select>
+      <textarea placeholder="Deja tu comentario"></textarea>
+
+      <div class="rating" data-rating="0">
+        <span data-value="5">★</span>
+        <span data-value="4">★</span>
+        <span data-value="3">★</span>
+        <span data-value="2">★</span>
+        <span data-value="1">★</span>
+      </div>
+      <p class="rating-value">Valoración: 0 / 5</p>
+      <button class="buy-btn">Añadir al carrito</button>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="store-item">
+      <img src="assets/product2.jpg" alt="Chaqueta Elegante">
+      <h3>Chaqueta Elegante</h3>
+      <p class="price">€60</p>
+      <p class="description">Chaqueta sofisticada para ocasiones especiales.</p>
+      <select class="size-select">
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+      </select>
+      <textarea placeholder="Deja tu comentario"></textarea>
+
+      <div class="rating" data-rating="0">
+        <span data-value="5">★</span>
+        <span data-value="4">★</span>
+        <span data-value="3">★</span>
+        <span data-value="2">★</span>
+        <span data-value="1">★</span>
+      </div>
+      <p class="rating-value">Valoración: 0 / 5</p>
+      <button class="buy-btn">Añadir al carrito</button>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="store-item">
+      <img src="assets/product3.jpg" alt="Pantalón Casual">
+      <h3>Pantalón Casual</h3>
+      <p class="price">€40</p>
+      <p class="description">Pantalón versátil para tu día a día.</p>
+      <select class="size-select">
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+      </select>
+      <textarea placeholder="Deja tu comentario"></textarea>
+
+      <div class="rating" data-rating="0">
+        <span data-value="5">★</span>
+        <span data-value="4">★</span>
+        <span data-value="3">★</span>
+        <span data-value="2">★</span>
+        <span data-value="1">★</span>
+      </div>
+      <p class="rating-value">Valoración: 0 / 5</p>
+      <button class="buy-btn">Añadir al carrito</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- 🛒 CARRITO -->
+<section id="cart">
+  <h2>Carrito de Compras</h2>
+  <ul id="cart-items"></ul>
+  <p>Total: €<span id="cart-total">0</span></p>
+</section>
+
+<section id="about">
+  <h2>Sobre Nosotros</h2>
+  <p>Somos una tienda de ropa comprometida con la moda, calidad y comodidad. Descubre nuestras colecciones y encuentra tu estilo.</p>
+</section>
+
+<section id="contact">
+  <h2>Contacto</h2>
+  <form id="contact-form">
+    <input type="text" name="name" placeholder="Tu nombre" required>
+    <input type="email" name="email" placeholder="Tu email" required>
+    <textarea name="message" rows="4" placeholder="Mensaje" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+  <p id="form-result"></p>
+</section>
+
+<footer>
+  <p>© 2025 — Tienda de Ropa</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
