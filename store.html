@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Tienda - Tienda de Ropa</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="store.html">Tienda</a></li>
+      <li><a href="about.html">Sobre nosotros</a></li>
+      <li><a href="contact.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="store">
+  <h2>Tienda</h2>
+
+  <!-- FILTROS -->
+  <div class="store-filters">
+    <input type="text" id="search" placeholder="Buscar producto...">
+    <select id="filter-size">
+      <option value="">Todas las tallas</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+    </select>
+    <input type="number" id="min-price" placeholder="Precio mínimo">
+    <input type="number" id="max-price" placeholder="Precio máximo">
+  </div>
+
+  <div class="store-grid">
+    <!-- Producto 1 -->
+    <div class="store-item">
+      <img src="assets/product1.jpg" alt="Camiseta Moderna">
+      <h3>Camiseta Moderna</h3>
+      <p class="price">€25</p>
+      <select class="size-select">
+        <option value="S">S</option><option value="M">M</option><option value="L">L</option><option value="XL">XL</option>
+      </select>
+      <textarea placeholder="Deja tu comentario"></textarea>
+      <div class="rating">
+        <span data-value="1">★</span><span data-value="2">★</span><span data-value="3">★</span><span data-value="4">★</span><span data-value="5">★</span>
+      </div>
+      <button class="buy-btn">Añadir al carrito</button>
+    </div>
+    <!-- Repetir producto 2 y 3 igual que antes -->
+  </div>
+
+  <!-- Carrito -->
+  <section id="cart">
+    <h2>Carrito de Compras</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: €<span id="cart-total">0</span></p>
+  </section>
+</section>
+
+<footer>
+  <p>© 2025 — Tienda de Ropa</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
